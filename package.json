@@ -1,5 +1,6 @@
 {
     "dependencies": {
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "express": "^4.16.3",
         "helmet": "^3.12.0",
         "knex": "^0.14.6",
@@ -10,7 +11,7 @@
     "name": "sprint-challenge-node-express",
     "description": "## Review",
     "version": "1.0.0",
-    "main": "server.js",
+    "main": "dist/server.js",
     "devDependencies": {
         "nodemon": "^1.17.3"
     },
