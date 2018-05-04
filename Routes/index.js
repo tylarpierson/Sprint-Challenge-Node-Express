@@ -1,6 +1,7 @@
-import { Router } from 'express';
-import projectRoute from './projectRoute';
-import actionsRoute from './actionsRoute';
+const express = require('express');
+const Router = express.Router();
+const projectRoute = require('./projectRoute');
+const actionsRoute = require('./actionsRoute');
 
 const mainRouter = Router({ mergeParams: true });
 
@@ -10,4 +11,3 @@ mainRouter.use('/projects', projectRoute);
 // actions
 mainRouter.use('/actions', actionsRoute);
 
-export default mainRouter;
