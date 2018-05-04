@@ -1,7 +1,7 @@
-const express = require('express');
-const db = require('../data/helpers/projectModel');
-const { validateBody, respondWithError } = require('../utils');
-const { NOT_FOUND_ERROR, INPUT_ERROR, REMOVE_ERROR, PUT_ERROR } = require('../Errors');
+import express from 'express';
+import db from '../data/helpers/projectModel';
+import { validateBody, respondWithError } from '../utils';
+import { NOT_FOUND_ERROR, INPUT_ERROR, REMOVE_ERROR, PUT_ERROR } from '../Errors';
 
 const projectRoute = express.Router();
 
@@ -85,3 +85,4 @@ projectRoute.delete('/:id', async (req, res) => {
     }
 });
 
+export default projectRoute;

@@ -15,7 +15,8 @@
         "nodemon": "^1.17.3"
     },
     "scripts": {
-        "start": "nodemon"
+        "start": "nodemon",
+        "watch": "parcel watch server.js --target node"
     },
     "repository": {
         "type": "git",

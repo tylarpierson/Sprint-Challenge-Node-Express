@@ -1,7 +1,7 @@
-const express = require('express');
-const helmet = require('helmet');
-const morgan = require('morgan');
-const mainRouter = require('./Routes');
+import express from 'express';
+import helmet from 'helmet';
+import morgan from 'morgan';
+import mainRouter from './Routes';
 
 const server = express();
 

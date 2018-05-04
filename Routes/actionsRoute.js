@@ -1,7 +1,7 @@
-const express = require('express');
-const db = require('../data/helpers/actionModel');
-const { validateBody, respondWithError } = require('../utils');
-const { NOT_FOUND_ERROR, INPUT_ERROR, REMOVE_ERROR, PUT_ERROR } = require('../Errors');
+import express from 'express';
+import db from '../data/helpers/actionModel';
+import { validateBody, respondWithError } from '../utils';
+import { NOT_FOUND_ERROR, INPUT_ERROR, REMOVE_ERROR, PUT_ERROR } from '../Errors';
 
 const actionsRoute = express.Router();
 
@@ -46,3 +46,5 @@ actionsRoute.delete('/:id', async (req, res) => {
         respondWithError(res);
     };
 });
+
+export default actionsRoute;
